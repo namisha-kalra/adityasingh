@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Aditya Singh – Co-Founder & Director, V SCAN Alliance</title>
+<meta name="description" content="Aditya Singh — Co-Founder & Director of V SCAN Alliance. Political strategist, digital campaign architect and journalism postgraduate from Delhi University."/>
+<meta property="og:title" content="Aditya Singh – V SCAN Alliance"/>
+<meta property="og:image" content="images/chaupal.jpg"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{--b9:#020810;--b8:#040E1E;--b7:#07182E;--b4:#1A4A9A;--b3:#3A72CC;--gold:#E0A820;--tx:#C0D8F0;--mut:rgba(192,216,240,.6);--ln:rgba(26,74,154,.3)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--b9);color:var(--tx);font-family:'Source Sans 3',sans-serif;line-height:1.7;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.serif{font-family:'Playfair Display',serif}
+section{padding:6rem 5vw;border-bottom:1px solid var(--ln)}
+section:nth-of-type(even){background:var(--b8)}
+.wrap{max-width:1160px;margin:0 auto}
+h2{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,4vw,2.6rem);color:#E8F2FF;line-height:1.15;margin-bottom:.6rem}
+.sub{color:var(--mut);margin-bottom:2.8rem;max-width:60ch}
+p{color:var(--mut);max-width:70ch}
+.btn{display:inline-block;background:var(--b4);color:#fff;padding:12px 26px;border-radius:7px;font-weight:700;font-size:.9rem;text-decoration:none;transition:background .2s}
+.btn:hover{background:#133272}
+.btn.ghost{background:none;border:1.5px solid var(--ln);color:var(--tx)}
+.btn.ghost:hover{border-color:var(--b3)}
+
+/* nav */
+header{position:sticky;top:0;z-index:50;background:rgba(2,8,16,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)}
+.bar{max-width:1160px;margin:0 auto;height:68px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:'Playfair Display',serif;font-weight:800;color:#fff;text-decoration:none;font-size:1.15rem}
+.brand small{display:block;font:500 .68rem 'Source Sans 3',sans-serif;color:var(--mut)}
+nav ul{list-style:none;display:flex;gap:.2rem}
+nav a{font-size:.8rem;font-weight:600;color:var(--mut);text-decoration:none;padding:8px 10px;border-radius:6px}
+nav a:hover,nav a.on{color:#fff;background:rgba(26,74,154,.3)}
+nav a.cta{background:var(--b4);color:#fff}
+#burger{display:none;background:none;border:1px solid var(--ln);color:#fff;border-radius:8px;padding:8px 14px;font:600 .85rem 'Source Sans 3',sans-serif;cursor:pointer}
+
+/* hero */
+#home{min-height:calc(100vh - 68px);display:flex;align-items:center;background:linear-gradient(135deg,#020810,#071830 45%,#040E1E)}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:4rem;align-items:center}
+.role{color:var(--gold);font-weight:600;letter-spacing:.5px;margin-bottom:.6rem}
+.name{font-family:'Playfair Display',serif;font-weight:800;font-size:clamp(3.2rem,8vw,6rem);line-height:.95;color:#fff;letter-spacing:-2px;margin-bottom:1.2rem}
+.quote{font-family:'Playfair Display',serif;font-style:italic;font-size:1.15rem;border-left:3px solid var(--gold);padding:.4rem 0 .4rem 1.1rem;margin:1.4rem 0;color:var(--tx)}
+.stats{display:flex;gap:2.2rem;margin:1.8rem 0;flex-wrap:wrap}
+.stats b{display:block;font:800 1.8rem 'Playfair Display',serif;color:#fff;line-height:1.1}
+.stats span{font-size:.78rem;color:var(--mut)}
+.cta-row{display:flex;gap:.7rem;flex-wrap:wrap}
+.hero figure{position:relative}
+.hero figure img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:28% 50%;border-radius:2px 18px 2px 18px;border:1px solid var(--ln);box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.hero figure::before{content:'';position:absolute;top:-12px;right:-12px;width:80px;height:80px;border-top:3px solid var(--gold);border-right:3px solid var(--gold)}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr 340px;gap:4rem;align-items:start}
+.about p{margin-bottom:1.1rem}
+.info{background:#07142A;border:1px solid var(--ln);border-radius:14px;overflow:hidden}
+.info img{height:240px;width:100%;object-fit:cover;object-position:center 20%}
+.info h3{padding:1rem 1.2rem;font:800 1.1rem 'Playfair Display',serif;color:#fff;border-bottom:2px solid var(--gold)}
+.info dl{display:grid;grid-template-columns:95px 1fr;gap:.5rem 1rem;padding:1rem 1.2rem;font-size:.85rem}
+.info dt{color:rgba(192,216,240,.45);font-weight:600}
+
+/* cards */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+.card{background:rgba(255,255,255,.04);border:1px solid var(--ln);border-radius:12px;padding:1.6rem}
+.card h3{font-size:1.02rem;color:#E8F2FF;margin-bottom:.4rem}
+.card p{font-size:.9rem}
+.card.pic{padding:0;overflow:hidden}
+.card.pic img{height:230px;width:100%;object-fit:cover}
+.card.pic div{padding:1.4rem 1.6rem 1.7rem}
+.soon{display:inline-block;font-size:.72rem;font-weight:700;color:var(--gold);border:1px solid rgba(224,168,32,.4);border-radius:99px;padding:2px 10px;margin-bottom:.7rem}
+
+/* timeline */
+.tl{border-left:2px solid var(--b4);margin:3.2rem 0 0 .4rem;padding-left:2rem;max-width:820px}
+.tl h3.t{margin-bottom:1.6rem;font:800 1.5rem 'Playfair Display',serif;color:#E8F2FF;margin-left:-.1rem}
+.tl article{position:relative;margin-bottom:2.2rem}
+.tl article::before{content:'';position:absolute;left:-2.55rem;top:.45rem;width:14px;height:14px;border-radius:50%;background:var(--gold);border:3px solid var(--b9)}
+.tl small{color:var(--gold);font-weight:700;font-size:.82rem}
+.tl h4{color:#fff;font-size:1.1rem}
+.tl em{color:var(--b3);font-style:normal;font-size:.85rem;font-weight:600}
+
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center}
+.split img{border-radius:14px;border:1px solid var(--ln);width:100%;aspect-ratio:4/3;object-fit:cover}
+.split p{margin-bottom:1rem}
+.vs{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.6rem}
+.vs div{border-top:2px solid var(--gold);padding-top:.7rem;font-size:.88rem;color:var(--mut)}
+.vs b{display:block;color:#fff}
+
+/* gallery */
+.gal{columns:3;column-gap:1rem}
+.gal button{display:block;width:100%;margin-bottom:1rem;border:0;padding:0;background:none;border-radius:10px;overflow:hidden;cursor:zoom-in;position:relative}
+.gal img{width:100%;height:auto;transition:transform .4s}
+.gal button:hover img{transform:scale(1.03)}
+dialog{background:none;border:0;max-width:94vw;max-height:94vh;margin:auto}
+dialog::backdrop{background:rgba(0,0,0,.9)}
+dialog img{max-height:90vh;border-radius:8px}
+
+/* contact */
+.contact{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.5rem}
+.contact a{display:block;text-decoration:none;background:rgba(255,255,255,.04);border:1px solid var(--ln);border-radius:12px;padding:1.3rem;transition:border-color .2s}
+.contact a:hover{border-color:var(--gold)}
+.contact b{display:block;color:#fff}
+.contact span{font-size:.82rem;color:var(--mut)}
+footer{padding:2rem 5vw;text-align:center;font-size:.82rem;color:rgba(192,216,240,.4)}
+#wa{position:fixed;right:20px;bottom:20px;z-index:60;width:54px;height:54px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.5)}
+
+@media(max-width:900px){
+ section{padding:4rem 6vw}
+ #burger{display:block}
+ nav{position:absolute;top:68px;left:0;right:0;background:var(--b9);border-bottom:1px solid var(--ln);display:none;padding:1rem 5vw 1.4rem}
+ nav.open{display:block}
+ nav ul{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+ nav a{display:block;border:1px solid var(--ln);border-radius:10px;padding:14px;font-size:.95rem;color:#fff}
+ .hero,.about,.split{grid-template-columns:1fr;gap:2.5rem}
+ .hero figure{order:-1;max-width:420px}
+ .grid3,.contact{grid-template-columns:1fr 1fr}
+ .gal{columns:2}
+}
+@media(max-width:560px){.grid3,.contact,.vs{grid-template-columns:1fr}.stats{gap:1.4rem}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<a id="wa" href="https://wa.me/918368087258?text=Hello%20Aditya!" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.89 9.88M20.46 3.49A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45c6.56 0 11.89-5.34 11.9-11.89a11.82 11.82 0 0 0-3.48-8.42"/></svg></a>
+
+<header>
+ <div class="bar">
+  <a href="#home" class="brand">Aditya Singh<small>abhyutthi.org.in</small></a>
+  <button id="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+  <nav id="menu" aria-label="Main">
+   <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects &amp; Campaigns</a></li>
+    <li><a href="#leadership">Leadership</a></li>
+    <li><a href="#vscan">V SCAN Alliance</a></li>
+    <li><a href="#gallery">Media Gallery</a></li>
+    <li><a href="#blog">Insights / Blog</a></li>
+    <li><a href="#contact" class="cta">Contact</a></li>
+   </ul>
+  </nav>
+ </div>
+</header>
+
+<main>
+<section id="home"><div class="wrap hero">
+ <div>
+  <p class="role">Co-Founder &amp; Director · V SCAN Alliance</p>
+  <h1 class="name">Aditya<br>Singh</h1>
+  <p>Political strategist who combines a journalist’s eye with a campaign architect’s precision — building narratives that trend online and win offline.</p>
+  <blockquote class="quote">“Strategizing Governance. Empowering Democracy.”</blockquote>
+  <div class="stats">
+   <div><b>3+</b><span>Years on the ground</span></div>
+   <div><b>100+</b><span>Campaigns</span></div>
+   <div><b>Pan-India</b><span>Reach</span></div>
+  </div>
+  <div class="cta-row"><a class="btn" href="#contact">Work with me</a><a class="btn ghost" href="#projects">See campaigns</a></div>
+ </div>
+ <figure><img src="images/chaupal.jpg" alt="Aditya Singh smiling during a village chaupal meeting"/></figure>
+</div></section>
+
+<section id="about"><div class="wrap about">
+ <div>
+  <h2>About me</h2>
+  <p class="sub">Journalism training, field experience, and a youth-first view of politics.</p>
+  <p>Aditya Singh is a new-age Indian political strategist who merges the analytical lens of a journalist with the precision of a campaign architect. As Co-Founder and Director of V SCAN Alliance (Vikas Strategic Citizens Accountability Network), he leads a youth-driven movement for transparency, accountability and people-first politics.</p>
+  <p>With over 3 years of on-ground experience, he has shaped narratives and data-led digital campaigns for parties and candidates across India. His strength is strategy that not only trends online but resonates offline — media insight, social influence and grassroots engagement in one formula.</p>
+  <p>A postgraduate in Journalism from Delhi University, Aditya brings academic rigour to every campaign. Before co-founding V SCAN Alliance, he worked with leading political consulting firms on public outreach, content strategy and influencer-driven political storytelling.</p>
+ </div>
+ <aside class="info">
+  <img src="images/portrait.jpg" alt="Portrait of Aditya Singh"/>
+  <h3>Aditya Singh</h3>
+  <dl>
+   <dt>Title</dt><dd>Co-Founder &amp; Director</dd>
+   <dt>Organisation</dt><dd>V SCAN Alliance</dd>
+   <dt>Education</dt><dd>PG Journalism, Delhi University</dd>
+   <dt>Experience</dt><dd>3+ years on-ground</dd>
+   <dt>Known for</dt><dd>Digital campaigns, influencer storytelling, youth politics</dd>
+   <dt>Co-founder</dt><dd>Vikas Kumar Choudhary</dd>
+  </dl>
+ </aside>
+</div></section>
+
+<section id="experience"><div class="wrap">
+ <h2>Experience</h2>
+ <p class="sub">Where journalism meets strategy, and data meets democracy.</p>
+ <div class="grid3">
+  <div class="card"><h3>Digital campaign strategy</h3><p>Data-led campaigns, from social media architecture to ground-level voter mobilisation at scale.</p></div>
+  <div class="card"><h3>Political journalism</h3><p>Factual, sharp, credible messaging built for long-term public trust, not short-term buzz.</p></div>
+  <div class="card"><h3>Influencer storytelling</h3><p>Bringing digital influencers and community voices into political narratives, beyond traditional media.</p></div>
+  <div class="card"><h3>Content strategy</h3><p>Manifesto messaging, leader branding, real-time social war rooms and rapid-response systems.</p></div>
+  <div class="card"><h3>Citizen engagement</h3><p>Citizen-first outreach that turns passive supporters into active campaign champions.</p></div>
+  <div class="card"><h3>Youth political consulting</h3><p>A youth-driven approach that brings energy, ethics and empathy into governance strategy.</p></div>
+ </div>
+ <div class="tl">
+  <h3 class="t">Career timeline</h3>
+  <article><small>Present</small><h4>Co-Founder &amp; Director</h4><em>V SCAN Alliance · Delhi</em><p>Leads digital strategy, communications and operations — co-building India’s next-generation ethical political consulting firm.</p></article>
+  <article><small>Prior experience</small><h4>Political Campaign Strategist</h4><em>Leading political consultancies · Pan-India</em><p>Led public outreach, content strategy and influencer-driven storytelling for multiple electoral campaigns.</p></article>
+  <article><small>Academic foundation</small><h4>PG Journalism, advanced specialisation</h4><em>Delhi University</em><p>The editorial instincts and communication precision behind his strategic edge.</p></article>
+  <article><small>Field work</small><h4>On-ground campaign operations</h4><em>Pan-India · Multiple states</em><p>3+ years closing the gap between political narrative and ground reality.</p></article>
+ </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+ <h2>Projects &amp; campaigns</h2>
+ <p class="sub">Strategy is tested on the road, in villages and on highways — not only on screens.</p>
+ <div class="grid3">
+  <div class="card pic"><img src="images/padyatra.jpg" alt="Large padyatra walking along a village road" loading="lazy"/><div><h3>Padyatra &amp; ground outreach</h3><p>Planning routes, crowds, media coverage and on-site coordination for walking campaigns.</p></div></div>
+  <div class="card pic"><img src="images/tiranga-march.jpg" alt="Tiranga march on a highway" loading="lazy"/><div><h3>Rallies &amp; public marches</h3><p>Ground events designed to be seen offline and shared online.</p></div></div>
+  <div class="card pic"><img src="images/field-camera.jpg" alt="Photographer reviewing shots during a field campaign" loading="lazy"/><div><h3>Live content &amp; documentation</h3><p>Photo and video teams that turn every event into campaign content in real time.</p></div></div>
+ </div>
+</div></section>
+
+<section id="leadership"><div class="wrap split">
+ <img src="images/street-talk.jpg" alt="Aditya Singh in discussion with a team member" loading="lazy"/>
+ <div>
+  <h2>Leadership</h2>
+  <p>Aditya leads the operations and media vertical at V SCAN Alliance, working alongside co-founder Vikas Kumar Choudhary. He is hands-on: planning in the office, then walking the route with the team.</p>
+  <p>His approach to leading is simple — brief clearly, stay on the ground, and keep the message honest.</p>
+  <div class="vs"><div><b>Operations</b>Field teams, logistics, schedules</div><div><b>Media</b>Content, press, digital presence</div><div><b>Strategy</b>Narrative and voter outreach</div></div>
+ </div>
+</div></section>
+
+<section id="vscan"><div class="wrap split">
+ <div>
+  <h2>V SCAN Alliance</h2>
+  <p class="role">Vikas Strategic Citizens Accountability Network</p>
+  <p>V SCAN Alliance is a youth-driven political consulting firm built on transparency, accountability and people-first politics. It combines data, digital media and grassroots work to make governance responsive to citizens.</p>
+  <p>Our motto: <em>Strategizing Governance. Empowering Democracy.</em></p>
+  <div class="cta-row" style="margin-top:1.4rem"><a class="btn" href="https://instagram.com/vscanalliance" target="_blank" rel="noopener">Follow V SCAN</a></div>
+ </div>
+ <img src="images/road-walk.jpg" alt="Team members talking while walking on a road" loading="lazy"/>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+ <h2>Media gallery</h2>
+ <p class="sub">Moments from the field. Tap a photo to enlarge.</p>
+ <div class="gal">
+  <button><img src="images/padyatra.jpg" alt="Padyatra on a village road" loading="lazy"/></button>
+  <button><img src="images/tiranga-march.jpg" alt="Tiranga march on a highway" loading="lazy"/></button>
+  <button><img src="images/chaupal.jpg" alt="Village chaupal meeting" loading="lazy"/></button>
+  <button><img src="images/field-review.jpg" alt="Reviewing photos in the field" loading="lazy"/></button>
+  <button><img src="images/portrait.jpg" alt="Portrait on a street" loading="lazy"/></button>
+  <button><img src="images/road-walk.jpg" alt="Walking and talking on the road" loading="lazy"/></button>
+  <button><img src="images/field-camera.jpg" alt="Photographer during the campaign" loading="lazy"/></button>
+  <button><img src="images/street-talk.jpg" alt="Street-side discussion" loading="lazy"/></button>
+ </div>
+ <dialog id="lb"><img alt=""/></dialog>
+</div></section>
+
+<section id="blog"><div class="wrap">
+ <h2>Insights &amp; blog</h2>
+ <p class="sub">Notes on campaigns, media and youth in politics.</p>
+ <div class="grid3">
+  <div class="card"><span class="soon">Coming soon</span><h3>Why offline wins elections that online starts</h3><p>What ground campaigns teach digital teams.</p></div>
+  <div class="card"><span class="soon">Coming soon</span><h3>A journalist’s approach to political messaging</h3><p>Facts first, narrative second.</p></div>
+  <div class="card"><span class="soon">Coming soon</span><h3>Youth and the next decade of Indian politics</h3><p>Where young voters and leaders are heading.</p></div>
+ </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+ <h2>Contact</h2>
+ <p class="sub">For campaigns, partnerships or media — message directly.</p>
+ <div class="contact">
+  <a href="https://wa.me/918368087258?text=Hello%20Aditya!" target="_blank" rel="noopener"><b>WhatsApp</b><span>+91 83680 87258</span></a>
+  <a href="https://www.linkedin.com/in/aditya-singh-57527a203/" target="_blank" rel="noopener"><b>LinkedIn</b><span>Aditya Singh</span></a>
+  <a href="https://instagram.com/vscanalliance" target="_blank" rel="noopener"><b>Instagram</b><span>@vscanalliance</span></a>
+  <a href="https://twitter.com/vscanalliance" target="_blank" rel="noopener"><b>Twitter</b><span>@vscanalliance</span></a>
+ </div>
+</div></section>
+</main>
+
+<footer>© 2026 Aditya Singh · abhyutthi.org.in</footer>
+
+<script>
+const b=document.getElementById('burger'),m=document.getElementById('menu');
+b.onclick=()=>b.setAttribute('aria-expanded',m.classList.toggle('open'));
+m.querySelectorAll('a').forEach(a=>a.onclick=()=>{m.classList.remove('open');b.setAttribute('aria-expanded','false')});
+const lb=document.getElementById('lb'),li=lb.querySelector('img');
+document.querySelectorAll('.gal button').forEach(x=>x.onclick=()=>{const i=x.querySelector('img');li.src=i.src;li.alt=i.alt;lb.showModal()});
+lb.onclick=()=>lb.close();
+const links=[...document.querySelectorAll('nav a')],secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach((a,i)=>a.classList.toggle('on',secs[i]===e.target))}),{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));
+</script>
+</body>
+</html>
